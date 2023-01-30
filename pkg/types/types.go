@@ -9,6 +9,13 @@ type Currency string
 // Status представляет собой статус платежа.
 type Status string
 
+// Предопределенные статус платежей
+const (
+	StatusOk Status = "OK"
+	StatusFail Status = "FAIL"
+	StatusInProgress Status = "INPROGRESS"
+)
+
 // Коды валют.
 const (
 	TJS Currency = "TJS"
@@ -40,6 +47,7 @@ type Payment struct {
 	ID int
 	Amount Money
 	Category Category
+	Status Status
 }
 
 // Слайс из карт для ДЗ 9.
