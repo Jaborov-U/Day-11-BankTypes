@@ -56,3 +56,4 @@ type PaymentSourse struct{
 	Number string // номер вида '5058 xxxx xxxx 8888'
 	Balance Money // баланс в дирамах
 }
+
